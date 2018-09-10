@@ -1,4 +1,9 @@
 #!/usr/bin/env python3
 
-name = input("Введіть ім'я: ")
-print("Привіт,", name)
+import sys
+
+argv = sys.argv[1:]
+
+name = ' '.join(argv)
+print(name)
+
